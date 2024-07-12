@@ -17,7 +17,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker push rmagalhaes1/devops_tp5_ubuntu:$BUILD_NUMBER'
+                sh 'docker push myapp/flask:$BUILD_NUMBER'
             }
         }
 }
